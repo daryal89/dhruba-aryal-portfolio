@@ -3,6 +3,7 @@ import Hero from './components/sections/Hero'
 import DeliveryQualityBridge from './components/sections/DeliveryQualityBridge'
 import FeaturedProjects from './components/sections/FeaturedProjects'
 import DevOpsCaseStudy from './components/sections/DevOpsCaseStudy'
+import QACaseStudy from './components/sections/QACaseStudy'
 import './styles/global.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <DeliveryQualityBridge />
         <FeaturedProjects />
         <DevOpsCaseStudy />
+        <QACaseStudy />
       </main>
     </>
   )
