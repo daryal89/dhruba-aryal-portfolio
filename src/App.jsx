@@ -5,6 +5,7 @@ import FeaturedProjects from './components/sections/FeaturedProjects'
 import DevOpsCaseStudy from './components/sections/DevOpsCaseStudy'
 import QACaseStudy from './components/sections/QACaseStudy'
 import TechnicalSkills from './components/sections/TechnicalSkills'
+import ProfessionalExperience from './components/sections/ProfessionalExperience'
 import './styles/global.css'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <DevOpsCaseStudy />
         <QACaseStudy />
         <TechnicalSkills />
+        <ProfessionalExperience />
       </main>
     </>
   )
