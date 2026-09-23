@@ -1865,6 +1865,386 @@ img {
 }
 
 /* =========================
+   About
+========================= */
+
+.about-section {
+  border-top: 1px solid var(--border);
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(74, 163, 255, 0.055),
+      transparent 25%
+    ),
+    var(--bg-secondary);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
+  gap: 70px;
+  align-items: start;
+}
+
+.about-content {
+  max-width: 780px;
+}
+
+.about-content h2,
+.education-heading h2,
+.resume-panel h2,
+.contact-intro h2 {
+  margin: 0;
+
+  color: var(--text-primary);
+
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+.about-copy {
+  margin-top: 28px;
+}
+
+.about-copy p {
+  margin: 0;
+
+  color: var(--text-secondary);
+
+  font-size: 1.02rem;
+  line-height: 1.85;
+}
+
+.about-copy p + p {
+  margin-top: 18px;
+}
+
+.about-focus {
+  padding: 28px;
+
+  border: 1px solid var(--border);
+  border-radius: 16px;
+
+  background: var(--surface);
+}
+
+.about-focus h3 {
+  margin: 0;
+
+  color: var(--text-primary);
+
+  font-size: 1.35rem;
+}
+
+.about-focus ul {
+  margin: 24px 0 0;
+  padding: 0;
+
+  display: grid;
+  gap: 13px;
+
+  list-style: none;
+}
+
+.about-focus li {
+  position: relative;
+
+  padding-left: 23px;
+
+  color: var(--text-secondary);
+
+  line-height: 1.5;
+}
+
+.about-focus li::before {
+  content: "✓";
+
+  position: absolute;
+  left: 0;
+
+  color: var(--accent-secondary);
+
+  font-weight: 900;
+}
+
+/* =========================
+   Education & Credentials
+========================= */
+
+.education-section {
+  border-top: 1px solid var(--border);
+
+  background: var(--bg-primary);
+}
+
+.education-heading {
+  max-width: 800px;
+}
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.credential-card {
+  padding: 30px;
+
+  border: 1px solid var(--border);
+  border-radius: 16px;
+
+  background: var(--surface);
+}
+
+.credential-number {
+  color: rgba(74, 163, 255, 0.55);
+
+  font-size: 1.6rem;
+  font-weight: 850;
+}
+
+.credential-type {
+  margin: 26px 0 0;
+
+  color: var(--accent-secondary);
+
+  font-size: 0.7rem;
+  font-weight: 850;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.credential-card h3 {
+  margin: 10px 0 0;
+
+  color: var(--text-primary);
+
+  font-size: 1.55rem;
+}
+
+.credential-organization {
+  margin: 13px 0 0;
+
+  color: var(--text-secondary);
+
+  font-weight: 750;
+}
+
+.credential-detail {
+  margin: 6px 0 0;
+
+  color: var(--accent);
+
+  font-size: 0.9rem;
+}
+
+.credential-description {
+  margin: 20px 0 0;
+
+  color: var(--text-muted);
+
+  line-height: 1.7;
+}
+
+/* =========================
+   Resume
+========================= */
+
+.resume-section {
+  border-top: 1px solid var(--border);
+
+  background: var(--bg-secondary);
+}
+
+.resume-panel {
+  padding: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+
+  border: 1px solid rgba(74, 163, 255, 0.22);
+  border-radius: var(--radius);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(74, 163, 255, 0.075),
+      rgba(56, 198, 187, 0.03)
+    ),
+    var(--surface);
+}
+
+.resume-panel > div:first-child {
+  max-width: 700px;
+}
+
+.resume-panel > div:first-child > p:not(.eyebrow) {
+  margin: 20px 0 0;
+
+  color: var(--text-secondary);
+
+  line-height: 1.75;
+}
+
+.resume-panel .resume-note {
+  color: var(--text-muted) !important;
+
+  font-size: 0.83rem;
+}
+
+.resume-actions {
+  min-width: 190px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* =========================
+   Contact
+========================= */
+
+.contact-section {
+  border-top: 1px solid var(--border);
+
+  background:
+    radial-gradient(
+      circle at 15% 30%,
+      rgba(56, 198, 187, 0.055),
+      transparent 28%
+    ),
+    var(--bg-primary);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(360px, 1.2fr);
+  gap: 72px;
+  align-items: start;
+}
+
+.contact-intro > p:not(.eyebrow, .contact-location) {
+  margin: 24px 0 0;
+
+  color: var(--text-secondary);
+
+  line-height: 1.8;
+}
+
+.contact-location {
+  margin: 18px 0 0;
+
+  color: var(--text-muted);
+
+  font-size: 0.88rem;
+}
+
+.contact-links {
+  display: grid;
+  gap: 12px;
+}
+
+.contact-card {
+  padding: 20px 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  border: 1px solid var(--border);
+  border-radius: 13px;
+
+  background: var(--surface);
+
+  transition:
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.contact-card:hover {
+  border-color: rgba(74, 163, 255, 0.38);
+
+  transform: translateY(-2px);
+}
+
+.contact-card span {
+  color: var(--text-muted);
+
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.contact-card strong {
+  color: var(--text-primary);
+
+  font-size: 0.88rem;
+  text-align: right;
+}
+
+/* =========================
+   Footer
+========================= */
+
+.site-footer {
+  padding: 34px 0;
+
+  border-top: 1px solid var(--border);
+
+  background: #060e19;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 36px;
+}
+
+.footer-inner strong {
+  color: var(--text-primary);
+}
+
+.footer-inner > div:first-child p {
+  margin: 5px 0 0;
+
+  color: var(--text-muted);
+
+  font-size: 0.77rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: var(--text-secondary);
+
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+}
+
+.footer-copyright {
+  margin: 0;
+
+  color: var(--text-muted);
+
+  font-size: 0.76rem;
+}
+
+/* =========================
    Responsive
 ========================= */
 
@@ -1958,6 +2338,32 @@ img {
 
   .experience-details {
     grid-template-columns: 1fr;
+  }
+
+    .about-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-focus {
+    max-width: 700px;
+  }
+
+  .resume-panel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .resume-actions {
+    width: 100%;
+    min-width: 0;
+    flex-direction: row;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
 }
 
@@ -2143,6 +2549,38 @@ img {
 
   .experience-card {
     padding: 22px;
+  }
+
+    .credentials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .credential-card,
+  .about-focus {
+    padding: 22px;
+  }
+
+  .resume-panel {
+    padding: 24px;
+  }
+
+  .resume-actions {
+    flex-direction: column;
+  }
+
+  .contact-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+  }
+
+  .contact-card strong {
+    text-align: left;
+    overflow-wrap: anywhere;
+  }
+
+  .footer-links {
+    gap: 14px;
   }
 }
 
