@@ -4,6 +4,7 @@ import DeliveryQualityBridge from './components/sections/DeliveryQualityBridge'
 import FeaturedProjects from './components/sections/FeaturedProjects'
 import DevOpsCaseStudy from './components/sections/DevOpsCaseStudy'
 import QACaseStudy from './components/sections/QACaseStudy'
+import TechnicalSkills from './components/sections/TechnicalSkills'
 import './styles/global.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <FeaturedProjects />
         <DevOpsCaseStudy />
         <QACaseStudy />
+        <TechnicalSkills />
       </main>
     </>
   )
