@@ -17,16 +17,15 @@ function Resume() {
             </p>
 
             <p className="resume-note">
-              The downloadable PDF will be added during final
-              launch preparation so the website and resume remain
-              aligned.
+              PDF version available for recruiters and hiring managers.
             </p>
+
           </div>
 
           <div className="resume-actions">
             <a
               className="button button-primary"
-              href="/resume/Dhruba_Aryal_Resume.pdf"
+              href={`${import.meta.env.BASE_URL}resume/Dhruba_Aryal_Resume.pdf`}
               download
             >
               Download Resume
