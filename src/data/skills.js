@@ -163,7 +163,6 @@ export const skillCategories = [
         level: 'professional',
         skills: [
           'Bash / Shell Fundamentals',
-          'Node.js / Express — Project Application Context',
         ],
       },
       {

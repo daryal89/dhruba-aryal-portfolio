@@ -8,11 +8,10 @@ export const devopsCaseStudy = {
     'This project demonstrates a production-style software delivery workflow from source control through automated validation, container publishing, secure cloud authentication, deployment, post-deployment verification, rollback, recovery, and release management.',
 
   supporting:
-    'The workflow is built around a Node.js/Express REST API using GitHub Actions for CI/CD, Docker for containerization, GitHub Container Registry for image storage, and Azure Container Apps for cloud deployment. The project emphasizes repeatable delivery, immutable build traceability, secure authentication, automated validation, and recovery from a controlled production failure.',
+  'The delivery workflow uses a containerized REST API application as the deployment target, with GitHub Actions for CI/CD, Docker for containerization, GitHub Container Registry for image storage, and Azure Container Apps for cloud deployment. The project emphasizes repeatable delivery, immutable build traceability, secure authentication, automated validation, and recovery from a controlled production failure.',
 
-  objective:
-    'The objective was to build and document an end-to-end delivery workflow that goes beyond simply deploying an application. The project demonstrates how source changes move through pull-request validation, automated CI checks, container creation, secure cloud deployment, runtime verification, controlled rollback, remediation, and release management.',
-
+objective:
+  'The objective was to build and document an end-to-end delivery workflow that goes beyond simply deploying an application. The project demonstrates how source changes move through pull-request validation, automated CI checks, container creation, secure cloud deployment, runtime verification, controlled rollback, remediation, and release management.',
   workflow: [
     'Developer Change',
     'Feature Branch',
@@ -179,7 +178,7 @@ export const devopsCaseStudy = {
   ],
 
   technologyStack: [
-    ['Application', 'Node.js / Express REST API'],
+    ['Application', 'Containerized REST API deployment target'],
     ['Source Control', 'Git, GitHub, feature branches, pull requests'],
     ['CI/CD', 'GitHub Actions'],
     ['Containerization', 'Docker'],
