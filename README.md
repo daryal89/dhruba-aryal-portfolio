@@ -1,16 +1,108 @@
-# React + Vite
+# Dhruba Aryal — Technical Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Production portfolio presenting hands-on work across software delivery, DevOps / CI/CD, software quality, REST API testing, database validation, cloud deployment, automation, traceability, and technical documentation.
 
-Currently, two official plugins are available:
+## Live Portfolio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://daryal89.github.io/dhruba-aryal-portfolio/
 
-## React Compiler
+## Featured Projects
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Production CI/CD Deployment Portfolio
 
-## Expanding the ESLint configuration
+Production-style software-delivery project demonstrating:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Git / GitHub feature-branch workflow
+- Pull requests and automated validation
+- GitHub Actions CI/CD
+- Docker containerization
+- GitHub Container Registry (GHCR)
+- Immutable commit-SHA image tagging
+- GitHub-to-Azure federated OIDC authentication
+- Azure Container Apps deployment
+- Runtime BUILD_ID traceability
+- Post-deployment smoke testing
+- Controlled failure
+- Rollback and remediation
+- Verified recovery
+- Release management
+
+Repository:
+
+https://github.com/daryal89/devops-ci-cd-deployment-portfolio
+
+### API, Database & CI Test Automation Portfolio
+
+End-to-end software-quality project demonstrating:
+
+- Requirements analysis
+- Requirements Traceability Matrix (RTM)
+- Manual and API test execution
+- REST API testing with Postman
+- Newman command-line automation
+- SQL / PostgreSQL validation
+- Defect documentation
+- Database integrity and constraint testing
+- GitHub Actions CI quality gate
+- JSON / JUnit reporting
+- Public-safe technical evidence
+
+Repository:
+
+https://github.com/daryal89/api-database-testing-portfolio
+
+## Portfolio Sections
+
+- Featured Projects
+- DevOps / CI/CD Technical Case Study
+- API, Database & CI Test Automation Case Study
+- Technical Skills
+- Professional Experience
+- About
+- Education & Credentials
+- Resume
+- Contact
+
+## Technical Areas Demonstrated
+
+**Software Delivery**
+- Git / GitHub
+- GitHub Actions
+- CI/CD
+- Docker
+- GHCR
+- Azure Container Apps
+- OIDC authentication
+- Deployment validation
+- Smoke testing
+- Rollback / recovery
+- Release traceability
+
+**Software Quality**
+- Functional and regression testing
+- REST API testing
+- Postman
+- Newman
+- SQL
+- PostgreSQL
+- Database validation
+- Defect reporting
+- Requirements traceability
+- JSON / JUnit reporting
+- CI quality gating
+
+## Portfolio Site
+
+The portfolio site is implemented with React and Vite and deployed automatically to GitHub Pages through GitHub Actions.
+
+## Release
+
+Current stable release:
+
+`v1.0.0`
+
+## Professional Links
+
+- Portfolio: https://daryal89.github.io/dhruba-aryal-portfolio/
+- LinkedIn: https://www.linkedin.com/in/dhruba-aryal/
+- GitHub: https://github.com/daryal89
